@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  background-color: #12372A;
+  width: 100%;
+  color:#ADBC9F;
+  position: fixed;
+}
+.nav-header {
+  font-family:"Lucida Console", "Courier New", monospace;
+  font-size:x-large;
+}
+
+a{
+  color: #ADBC9F!important;/* Change to the desired color value */
+}
+
+.nav-item:hover a {
+  color: #12372A !important;
+  background-color: #FBFADA;
+
+}
+
+
+.home{
+  background-image: url('Assests/adbg.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-content{
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+}
+.home-text{
+  color: #d6d6d6;
+  background-color: rgba(55, 84, 72, 0.2);
+  font-family: cursive;
+  padding: 20px;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+.about{
+  /* height: 100vh; */
+  text-align: center;
+  padding-top: 20px;
+}
+.about-content{
+  display: flex;
+  text-align: justify;
+  width: 100%;
+
+}
+.about-img{
+  height: 80%;
+  width: 100%;
+  background-image: url('Assests/ad2.jpg');
+  background-size: cover;
+
+}
+.about-text {
+  height: auto;
+  width:80%; /* Adjusted width considering padding and border */
+  display: flex;
+  justify-content: start;
+  border: 1px solid #12372A; /* Adjust border style */
+}
+.about-header{
+  background-color: #ADBC9F;
+  margin-top: 50px;
+  padding: 5px;
+  color:#12372A;
+  align-items: center;
+  margin-left:10px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  /* .navbar{
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  } */
+
+  .home-content {
+    padding: 20px;
+  }
+
+  .home-text {
+    font-size: large;
   }
 }
+
+.place{
+  height: 80vh;
+  position: relative;
+  /* padding-top: 20%; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center ;
+}
+
+.item{
+  height: auto;
+  width: 25%;
+  /* margin-left: 20px; */
+  text-align: center;
+  position: relative;
+  /* padding: 20px; */
+  /* background-size: cover; */
+}
+
+.place-img{
+  height: 100%;
+  width: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(55, 84, 72, 0.6);
+  padding: 10px; 
+  opacity: 0; 
+  transition: opacity 0.3s; 
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:hover .text-overlay {
+  opacity: 1; 
+}
+
+.overlay-text {
+  color:#ffffff;
+  font-size: 24px; /* Adjust font size as needed */
+  
+}
+
+
+
+.cha{
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  padding-right: 15px;
+  bottom: 10vh;
+  /* padding-bottom: 10px; */
+  right: 0;
+  color: rgb(94, 7, 255);
+
+}
+
+.footer{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  left:0;
+  right:0;
+  background-color: bisque;
+  padding: 10px;
+}
+
+
+
